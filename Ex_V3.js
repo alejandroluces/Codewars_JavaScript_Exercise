@@ -14,10 +14,9 @@ let array1 =
 
 // Hint: Don't forget to check for bad values like null/undefined
 
-    
-let count = 0
 const countSheeps =(arrayOfSheep) =>{
 
+    let count = 0
     for (let i = 0; i < arrayOfSheep.length; i++) {
         if (arrayOfSheep[i] === true) {
             count++
@@ -25,9 +24,6 @@ const countSheeps =(arrayOfSheep) =>{
     }
     return count
 }
-
-
-
 console.log(countSheeps(array1))
 
 
