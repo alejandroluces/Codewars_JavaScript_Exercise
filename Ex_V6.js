@@ -1,5 +1,5 @@
 const multiplyN = (a, b)=>{
-   return a *= b;
+   return a * b;
     
   }
 
