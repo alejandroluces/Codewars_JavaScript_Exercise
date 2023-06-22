@@ -16,17 +16,6 @@ class SmallestIntegerFinder {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
     console.log(([78,56,232,12,8]),8);
     console.log(([78,56,232,12,18]),12);
     
