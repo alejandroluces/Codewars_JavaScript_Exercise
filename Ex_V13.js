@@ -12,4 +12,5 @@ function findAverage(array) {
   console.log(findAverage([1,2,3,4]));
   console.log(findAverage([]));
   
-  
+//   1. Utilizamos el método reduce para sumar todos los números del array
+//   2. Dividimos el resultado por la longitud del array  
