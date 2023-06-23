@@ -39,9 +39,10 @@ console.log(spinWords2("You are almost to the last test"));
  */
 
 const spinWords2 = (string) =>{
+
     return string.split(" ").map(function(word){
-    return (word.length>4)? word.split("").reverse().join(""):word;
-}).join(" ");
+
+    return (word.length>4)? word.split("").reverse().join(""):word;}).join(" ");
     
 }
 
@@ -49,7 +50,10 @@ console.log(spinWords2("Alejo un saludo"));
 
 
 
+function spinWords3(words){
+  return words.split(" ").map(w => w.length < 5 ? w : w.split("").reverse().join("")).join(" ");}
 
+console.log(spinWords3("Alejo un saludo"));
 
 
 
