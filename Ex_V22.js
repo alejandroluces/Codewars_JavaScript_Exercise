@@ -22,16 +22,3 @@ const isIsogram = (str) => {
 */
  
  
- 
- 
- // / Crear un Set
- const letras = new Set();
- 
- // Agregar valores al Set
- letras.add("a");
- letras.add("b");
- letras.add("c");
- letras.add([2,5,]);
-   
- console.log(letras);
- 
