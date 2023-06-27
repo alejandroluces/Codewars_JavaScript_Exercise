@@ -42,3 +42,44 @@ He aquí la explicación del código anterior:
   no es una consonante, ponemos currentVal a 0.
 5. A continuación, comprobamos si currentVal es mayor que maxVal, y si lo es, establecemos maxVal al valor de currentVal.
 6. Después de iterar toda la cadena, devolvemos maxVal. */
+
+
+
+
+// Otra Solucion mas simplificada
+
+
+
+
+
+/* 
+
+const solve = s => s.split(/[aeiou]+/).reduce((s,n)=> Math.max(s, n.split('').reduce((a,b)=> a + b.charCodeAt(0) - 96, 0)), 0);
+
+console.log(solve("zodiac")); // 26
+console.log(solve("chruschtschov")); // 80
+console.log(solve("khrushchev")); // 38
+console.log(solve("strength")); // 57
+console.log(solve("catchphrase")); // 73
+console.log(solve("twelfthstreet")); // 103
+console.log(solve("mischtschenkoana")); // 80
+
+
+*/
+
+/* He aquí la explicación del código anterior:
+
+1. s.split(/[aeiou]+/) divide la cadena en una matriz de cadenas, utilizando las vocales como separadores.
+
+2. reduce((s,n)=> Math.max(s, n.split('').reduce((a,b)=> a + b.charCodeAt(0) - 96, 0)), 0) reduce la matriz 
+   de cadenas a la suma máxima de los códigos de carácter de cada cadena.
+
+3. n.split('').reduce((a,b)=> a + b.charCodeAt(0) - 96, 0) divide cada cadena en una matriz de caracteres, 
+   luego reduce la matriz a la suma de los códigos de carácter de cada carácter, usando 0 como valor inicial.
+
+4. Math.max(s, n.split('').reduce((a,b)=> a + b.charCodeAt(0) - 96, 0)) toma el máximo del máximo actual y 
+   la suma de los códigos de carácter.
+
+5. El máximo de las sumas de los códigos de caracteres es la respuesta. 
+
+*/
