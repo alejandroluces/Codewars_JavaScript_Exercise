@@ -41,13 +41,17 @@ console.log(pipeFix([1,2,3]));
 
 /*
 
-1. Creamos una función llamada pipeFix con un parámetro números
-2. Creamos una variable llamada firstNum y le asignamos el primer valor del array numbers
-3. Creamos una variable llamada lastNum y le asignamos el último valor del array numbers
-4. Creamos una sentencia if que diga que si el primerNum es menor que el últimoNum, entonces haremos lo siguiente:
-5. Creamos un bucle for que empezará en 0, y subirá hasta el últimoNum menos el primerNum 
-    (hacemos esto para saber cuántas veces tenemos que añadir el valor del primerNum al array)
-6. Asignamos a los números del array el valor del firstNum más el valor de i, que es el índice del bucle for
-7. Devolvemos los números del array 
+1. En la primera línea, declaramos la función pipeFix que recibe un array de números como parámetro.
+
+2. En la segunda y tercera línea, declaramos dos variables, firstNum que representa el primer número 
+    del array y lastNum que representa el último número del array.
+
+3. En la cuarta línea, creamos una condición que comprueba si el primer número del array es menor que el último número del array.
+
+4. Si la condición es verdadera, entonces iniciamos un bucle for que itera desde 0 hasta la diferencia 
+    entre el último número y el primer número (más 1, para incluir el último número) y en cada iteración 
+    sumamos el primer número al índice de la iteración.
+
+5. Finalmente, devolvemos el array. 
 
 */
