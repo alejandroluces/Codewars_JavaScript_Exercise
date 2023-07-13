@@ -10,16 +10,23 @@
 
 
 
-const arrObj =(a,b) =>{
+// const arrObj =(a,b) =>{
 
 
-let obj={}
+// let obj={}
 
- a.map((item,index)=>{
+//  a.map((item,index)=>{
 
-    obj [item]= b[index]
+//     obj [item]= b[index]
 
-})
-return obj
+// })
+// return obj
+// }
+// console.log(arrObj(['a','b','c','d'],[1,2,3,4]));
+
+
+const worf =(a,b) =>{
+return  a + b
 }
-console.log(arrObj(['a','b','c','d'],[1,2,3,4]));
+
+console.log(worf(["hola"],["como estas"]));
