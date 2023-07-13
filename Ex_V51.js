@@ -23,6 +23,8 @@ return result
 }
 
 console.log(oddCount(15));
+console.log(oddCount(15023));
+
 
 
 /* usando el metodo map
