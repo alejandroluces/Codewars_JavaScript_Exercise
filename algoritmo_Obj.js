@@ -17,31 +17,44 @@
 // Salida: {nombre: "Juan", edad: 30}
 
 
-// Algoritmo para agregar una propiedad a un objeto si no existe:
+// 4))   Algoritmo para agregar una propiedad a un objeto si no existe:
 // Ejemplo:
 // Entrada: {nombre: "Juan", edad: 30}, "apellido"
 // Salida: {nombre: "Juan", edad: 30, apellido: null}
-// Algoritmo para eliminar una propiedad de un objeto:
+
+
+
+
+// 5)) Algoritmo para eliminar una propiedad de un objeto:
 // Ejemplo:
 // Entrada: {nombre: "Juan", edad: 30}, "edad"
 // Salida: {nombre: "Juan"}
-// Algoritmo para determinar si un objeto es vacío (no tiene propiedades):
+
+
+// 6)) Algoritmo para determinar si un objeto es vacío (no tiene propiedades):
 // Ejemplo:
 // Entrada: {}
 // Salida: true
-// Algoritmo para obtener la suma de los valores de todas las propiedades numéricas de un objeto:
+
+
+//7))  Algoritmo para obtener la suma de los valores de todas las propiedades numéricas de un objeto:
 // Ejemplo:
 // Entrada: {nombre: "Camiseta", precio: 20.99, cantidad: 5}
 // Salida: 25.99
-// Algoritmo para convertir un objeto en un array de objetos con pares de clave-valor:
+
+
+// 8)) Algoritmo para convertir un objeto en un array de objetos con pares de clave-valor:
 // Ejemplo:
 // Entrada: {nombre: "Juan", edad: 30}
 // Salida: [{clave: "nombre", valor: "Juan"}, {clave: "edad", valor: 30}]
-// Algoritmo para obtener el número de propiedades de un objeto:
+
+// 9)) Algoritmo para obtener el número de propiedades de un objeto:
 // Ejemplo:
 // Entrada: {nombre: "Juan", edad: 30, apellido: null}
 // Salida: 3
-// Algoritmo para obtener un nuevo objeto a partir de la combinación de dos objetos:
+
+
+// 10)) Algoritmo para obtener un nuevo objeto a partir de la combinación de dos objetos:
 // Ejemplo:
 // Entrada: {nombre: "Juan", edad: 30}, {apellido: "Pérez", ciudad: "Madrid"}
 // Salida: {nombre: "Juan", edad: 30, apellido: "Pérez", ciudad: "Madrid"}
