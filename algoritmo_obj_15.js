@@ -16,7 +16,7 @@ const movies =[
 
 
 const selecMovies =(a) =>{
-    return movies.filter(gender=>gender.genero==="drama")
+    return a.filter(gender=>gender.genero==="drama")
 }
 
 console.log(selecMovies(movies));
