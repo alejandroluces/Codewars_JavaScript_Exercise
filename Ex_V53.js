@@ -37,4 +37,11 @@ console.log(triangular(2));
 console.log(triangular(4));
 console.log(triangular(-454));
 
+/* 
 
+1. La función se llama triangular y toma un parámetro n.
+2. Si n es menor o igual que 0, la función devuelve 0.
+3. En caso contrario, la función devuelve el resultado de la siguiente fórmula:
+    (n * (n + 1)) / 2 
+  
+*/
