@@ -9,10 +9,11 @@ const capitals =(word) =>{
     let arr = [];
     for(let i = 0; i < word.length; i++){
       if(word[i] === word[i].toUpperCase()){
+        console.log(i);     
         arr.push(i);
       }
     }
     return arr;
 }
 console.log(capitals('CodEWaRs'));
-// console.log(capitals('AleJAndro'));
+console.log(capitals('AleJAndro'));
