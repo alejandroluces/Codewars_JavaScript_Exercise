@@ -15,3 +15,12 @@ const multiplicador =(array) =>{
 }
 console.log(multiplicador(array));
 
+// otra forma de hacerlo
+let sumaDos = 0;
+for (let i = 1; i < 10; i++) {
+   if(i % 3===0){
+        sumaDos+=i
+        
+   }
+}
+console.log(sumaDos);
