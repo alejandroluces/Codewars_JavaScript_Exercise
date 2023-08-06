@@ -1,14 +1,22 @@
 /* 
  https://edabit.com/challenge/8q54MKnRrm89pSLmW
 
+ Convert Minutes into Seconds
+Write a function that takes an integer minutes and converts it to seconds.
+
+Examples
+convert(5) ➞ 300
+
+convert(3) ➞ 180
+
+convert(2) ➞ 120
+
  */
 
-let segundos = 60;
+
  const minutCal =(n) =>{
 
-    return segundos * n;
-
-
+    return 60 * n;
 
 }
 console.log(minutCal(5));
