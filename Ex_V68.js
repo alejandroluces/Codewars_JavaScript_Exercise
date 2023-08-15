@@ -58,13 +58,15 @@ const personas = [
     { nombre: "Carlos", edad: 29, correo: "carlos@example.com", activo: true }
 ]
 
-const personas2 = [
-    { nombre: "Pedro", edad: 15, correo: "pedro@example.com", activo: true },
-    { nombre: "Elena", edad: 44, correo: "elena@example.com", activo: false }
-  ]
+
 
 const personasMayores = (personas) => {
-    return personas.filter(persona => persona.edad >= 18 && persona.activo).map(persona => `${persona.nombre}: ${persona.correo}`);
+    // return personas.filter(persona => persona.edad >= 18 && persona.activo).map(persona => `${persona.nombre}: ${persona.correo}`);
+    
+
+    return personas.filter(persona => persona.edad >= 18 && persona.activo).map(persona => ({nombre: persona.nombre, correo: persona.correo}));
+
+
 }
 
 console.log(personasMayores(personas));
