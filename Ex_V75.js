@@ -21,3 +21,12 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 console.log(uniqueInOrder(('ABBCcAD')));
 console.log(uniqueInOrder([1,2,2,3,3]));
 
+/* 
+
+1. [...str] convierte la cadena de entrada en una matriz.
+2. filter() devuelve una nueva matriz con elementos que pasan la prueba
+   implementada por la función de devolución de llamada.
+3. item !== array[index - 1] compara el elemento actual con el elemento anterior.
+   Si son diferentes, se retiene y se agrega a la matriz devuelta. 
+   
+*/
