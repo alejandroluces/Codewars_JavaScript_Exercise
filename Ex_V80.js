@@ -18,4 +18,15 @@ const namesWithAge = names.map((name, index) => {
 }
 )
 
-console.log(namesWithAge)   
+console.log(namesWithAge)  
+
+// Quiero imprimir en consola los nombres de las personas  y la edad de cada una de ellas.
+
+namesWithAge.forEach((name) => {
+    let resul=name.name
+    console.log(resul)
+    console.log(`${name.name} ${name.lastname} tiene ${name.age} años`)
+}
+)
+
+
