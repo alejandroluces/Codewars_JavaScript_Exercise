@@ -205,3 +205,34 @@ const todosMayoresQue10 = (numeros) => {
     }
 
     console.log(todosMayoresQue10([15, 12,18, 19, 14]));
+
+
+
+/*
+
+Enunciado:
+Desarrolla una función en JavaScript que tome como entrada una cadena de texto cadena. La función debe determinar si la cadena contiene al menos una vocal (a, e, i, o, u) en mayúscula. Si la cadena contiene al menos una vocal en mayúscula, la función debe retornar "Contiene una vocal en mayúscula". Si la cadena no contiene ninguna vocal en mayúscula, la función debe retornar "No contiene una vocal en mayúscula".
+
+Entrada:
+Una cadena de texto cadena, donde 1 <= cadena.length <= 1000, que representa la cadena a analizar.
+Ejemplo de Entrada:
+javascript
+Copy code
+cadena = "Hola Mundo"
+Salida:
+La función debe imprimir en consola si la cadena contiene al menos una vocal en mayúscula o no, utilizando operadores ternarios para tomar la decisión.
+
+Ejemplo de Salida:
+arduino
+Copy code
+"Contiene una vocal en mayúscula"
+
+
+*/
+
+const contieneVocalMayuscula = (cadena) => {
+    // Toma en cuenta que el método match() es sensible a mayúsculas y minúsculas. El método toLowerCase() convierte una cadena de texto a minúsculas.
+    return cadena.match(/[AEIOU]/) ? "Contiene una vocal en mayúscula" : "No contiene una vocal en mayúscula";
+    }
+
+    console.log(contieneVocalMayuscula("Hola Mundo"));
