@@ -1,53 +1,41 @@
 /*
 
-
 Enunciado:
-Desarrolla una función en JavaScript que tome como entrada un arreglo bidimensional de enteros matriz, que represente una grilla de celdas. La función debe determinar si es posible llegar desde la esquina superior izquierda hasta la esquina inferior derecha, moviéndose solamente hacia la derecha o hacia abajo en cada paso, y sólo a través de celdas con valor 1. Las celdas con valor 0 son consideradas obstáculos y no se pueden atravesar. La función debe retornar "Sí" si es posible llegar, y "No" si no lo es.
+Desarrolla una función en JavaScript que tome como entrada una cadena de texto frase y un carácter letra. La función debe contar cuántas veces aparece letra en frase, sin importar si es mayúscula o minúscula, y retornar ese número. Además, si la letra no aparece en la frase, la función debe retornar la cadena "La letra no se encuentra en la frase".
 
 Entrada:
-Un arreglo bidimensional de enteros matriz, donde 2 <= matriz.length, matriz[i].length <= 100 y matriz[i][j] es 0 o 1. La esquina superior izquierda y la esquina inferior derecha siempre tendrán valor 1.
+Una cadena de texto frase, donde 1 <= frase.length <= 1000, que representa una frase en la que se buscará la letra.
+Un carácter letra, que representa la letra que se buscará en la frase.
 Ejemplo de Entrada:
 javascript
 Copy code
-matriz = [
-  [1, 0, 1, 1],
-  [1, 1, 0, 1],
-  [0, 1, 1, 0],
-  [1, 1, 1, 1]
-]
+frase = "El elefante elegante"
+letra = "e"
 Salida:
-La función debe imprimir en consola "Sí" si es posible llegar desde la esquina superior izquierda hasta la esquina inferior derecha, moviéndose solamente hacia la derecha o hacia abajo, y "No" si no lo es.
+La función debe imprimir en consola el número de veces que letra aparece en frase, o "La letra no se encuentra en la frase" si la letra no aparece.
 
 Ejemplo de Salida:
-arduino
 Copy code
-"No"
-En este caso, no es posible llegar desde la esquina superior izquierda hasta la esquina inferior derecha, ya que hay obstáculos en el camino.
-
+5
+En este caso, la letra "e" aparece 5 veces en la frase "El elefante elegante".
 
 */
 
-const matriz = [
-    [1, 0, 1, 1],
-    [1, 1, 0, 1],
-    [0, 1, 1, 0],
-    [1, 1, 1, 1]
-    ]
-
-    const esPosible = (matriz) => {
-
-        let esPosible = matriz.map((item, index) => {
-            if (index === 0) {
-                return item.every((item) => item === 1)
-            } else {
-                return item[0] === 1
-            }
-        }).every((item) => item === true)
-
-
-        return esPosible ? 'Si' : 'No'
-
-
+const countLetter = (phrase, letter) => {
+    let frase = phrase.toLowerCase();
+    let letra = letter.toLowerCase();
+    let count = 0;
+    for (let i = 0; i < frase.length; i++) {
+        if (frase[i] === letra) {
+            count++;
+        }
     }
+    if (count === 0) {
+        return "La letra no se encuentra en la frase";
+    }
+    return count;
+    
 
-    console.log(esPosible(matriz))
+}
+
+console.log(countLetter("El elefante elegante", "e")); // 5
