@@ -23,10 +23,11 @@ const repeatW = (num, palabra1, palabra2) => {
     
 //Otra manera de resolverlo
 
-    function alternate(n, firstValue, secondValue){
-        const array = [];
-        for (let i = 0; i < n; i++) {
-          array.push(i % 2 === 0 ? firstValue : secondValue)
-        }
-        return array;
-      }
+const repeaTw2 = (num, palabra1, palabra2) => {
+
+  return  Array(num).fill().map((_, i) => i % 2 === 0 ? palabra1 : palabra2)
+  
+}
+
+console.log(repeaTw2(5, true, false));
+
