@@ -2,7 +2,7 @@
 
 const operacionMatematica = (num1, num2) => {
 
-  if (typeof num1 !== "number" || typeof num2 !== "number") {
+  if (typeof num1 !== "number" || typeof num2 !== "number"|| isNaN(num1) || isNaN(num2)) {
     return "no se puede realizar la operacion matematicas, porque uno o los dos parametros no son numeros."
   }
 
