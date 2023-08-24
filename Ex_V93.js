@@ -42,3 +42,68 @@ const stringy = size => {
 
     console.log(stringy(6));
 
+
+    /* Desarrollar una funcion para calcular 20/5*20 */
+
+    const calcular = () => {
+        return 20 / 5 * 20;
+    }
+
+    console.log(calcular());
+
+
+
+
+
+// OTro algortimo
+/*
+
+Miedo selectivo a los números.
+541085% de 5451.599 de 5.195Jota4 problemas informados
+ javascript
+Nodo v8.1.3
+EMPUJE
+EMACS
+Instrucciones
+Producción
+Tengo una enfermedad mental loca. No me gustan mucho los números. Pero es un poco complicado: el número al que tengo miedo depende del día de la semana que sea... Esta es una descripción concreta de mi enfermedad mental:
+
+Lunes --> 12
+
+Martes --> números mayores que 95
+
+Miércoles --> 34
+
+Jueves --> 0
+
+Viernes --> números divisibles por 2
+
+Sábado --> 56
+
+Domingo --> 666 o -666
+
+Escribe una función que tome una cadena (día de la semana) y un número entero (número a analizar) para que le diga al médico si tengo miedo o no. (devuelve un booleano)
+
+*/
+
+const amIafraid = (day, num) => {
+
+    return day === 'Monday' && num === 12 ||
+        day === 'Tuesday' && num > 95 ||
+        day === 'Wednesday' && num === 34 ||
+        day === 'Thursday' && num === 0 ||
+        day === 'Friday' && num % 2 === 0 ||
+        day === 'Saturday' && num === 56 ||
+        day === 'Sunday' && (num === 666 || num === -666);
+        
+}
+
+console.log(amIafraid('Monday', 13));
+console.log(amIafraid('Tuesday', 965));
+console.log(amIafraid('Wednesday', 34));
+console.log(amIafraid('Thursday', 0));
+console.log(amIafraid('Friday', 2));
+console.log(amIafraid('Saturday', 56));
+console.log(amIafraid('Sunday', -666));
+
+
