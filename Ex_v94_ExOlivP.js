@@ -1,5 +1,5 @@
 /*
-
+1)
 Duplicar los números en un array:
 Planteamiento: Escribe una función que tome un array de números como entrada y devuelva un nuevo array donde cada número se haya duplicado.
 
@@ -15,7 +15,7 @@ const duplicateNumbers = numbers => {
 console.log(duplicateNumbers([3, 5, 7, 9]));
 
 /*
-
+2)
 Convertir nombres en iniciales:
 Planteamiento: Escribe una función que tome un array de nombres completos y devuelva un nuevo array con las iniciales de cada nombre.
 
@@ -35,7 +35,7 @@ console.log(getInitials(["John Doe", "Jane Smith", "Michael Johnson"]));
 
 
 /*
-
+3)
 Calcular el cuadrado de los números en un array:
 Planteamiento: Escribe una función que tome un array de números como entrada y devuelva un nuevo array donde cada número se haya elevado al cuadrado.
 
@@ -53,7 +53,7 @@ console.log(squareNumbers([2, 4, 6, 8]));
 
 
 /*
-
+4)
 Filtrar números primos:
 Planteamiento: Escribe una función que tome un array de números como entrada y devuelva un nuevo array que contenga solo los números primos.
 
@@ -71,7 +71,7 @@ console.log(isPrime([2, 3, 4, 5, 6, 7, 8, 9]));
 
 
 /*
-
+5)
 Filtrar palabras que empiezan con una letra específica:
 Planteamiento: Escribe una función que tome un array de palabras y una letra como entrada, y devuelva un nuevo array con las palabras que empiezan con la letra dada.
 Entrada: ["apple", "banana", "avocado", "grape"], Letra: "a"
@@ -87,7 +87,7 @@ console.log(filterWords(["apple", "banana", "avocado", "grape"], "a"));
 
 
 /*
-
+6)
 Filtrar números mayores que un valor específico:
 Planteamiento: Escribe una función que tome un array de números y un valor mínimo como entrada, y devuelva un nuevo array con los números mayores que el valor dado.
 
@@ -105,7 +105,7 @@ console.log(filterNumbers([12, 25, 6, 40, 8, 15], 20));
 
 
 /*
-
+7)
 Encontrar el primer múltiplo de un número dado:
 Planteamiento: Escribe una función que tome un array de números y un número objetivo como entrada, y devuelva el primer número en el array que sea un múltiplo del número objetivo.
 
@@ -123,7 +123,7 @@ console.log(findMultiple([5, 10, 15, 20, 25], 3));
 
 
 /*
-
+8)
 Encontrar el primer nombre con más de cierta cantidad de caracteres:
 Planteamiento: Escribe una función que tome un array de nombres y una longitud mínima como entrada, y devuelva el primer nombre en el array que tenga más caracteres que la longitud mínima.
 
@@ -140,7 +140,7 @@ console.log(findName(["Alice", "Bob", "Charlie", "Davidd", "Eve"], 6));
 
 
 /*
-
+9)
 Encontrar el primer número par mayor que un valor específico:
 Planteamiento: Escribe una función que tome un array de números y un valor mínimo como entrada, y devuelva el primer número par en el array que sea mayor que el valor mínimo.
 
@@ -158,7 +158,7 @@ console.log(findNumber([5, 7, 8, 10, 12, 15], 9));
 
 
 /*
-
+10)
 Encontrar el índice del primer número divisible por un número dado:
 Planteamiento: Escribe una función que tome un array de números y un número divisor como entrada, y devuelva el índice del primer número en el array que sea divisible por el número divisor.
 
@@ -174,8 +174,23 @@ const findIndex = (numbers, divisor) => {
 console.log(findIndex([4, 2, 30, 35, 40], 5));
 
 
-/*
+/* 
+11)
+Encontrar el índice del primer nombre con más de cierta longitud:
+Planteamiento: Escribe una función que tome un array de nombres y una longitud mínima como entrada, y devuelva el índice del primer nombre en el array que tenga más caracteres que la longitud mínima.
 
+Entrada: ["Alice", "Bob", "Charlie", "David", "Eve"], Longitud mínima: 6
+Retorno: 2
+*/
+
+const findIndexName = (names, min) => {
+    return names.findIndex(name => name.length > min);
+}
+console.log(findIndexName(["Alice", "Bob", "Charlie", "David", "Eve"], 6));
+
+
+/*
+12)
 Encontrar el índice del primer número impar mayor que un valor específico:
 Planteamiento: Escribe una función que tome un array de números y un valor mínimo como entrada, y devuelva el índice del primer número impar en el array que sea mayor que el valor mínimo.
 
@@ -192,7 +207,7 @@ console.log(findIndexNumber([5, 7, 8, 10, 12, 15], 9));
 
 
 /*
-
+13)
 Ordenar nombres por longitud de manera descendente:
 Planteamiento: Escribe una función que tome un array de nombres y los ordene de manera descendente según su longitud.
 
@@ -210,7 +225,7 @@ console.log(sortNames(["Alice", "Bob", "Charlie", "David", "Eve"]));
 
 
 /*
-
+14)
 Ordenar números por cantidad de dígitos de manera ascendente:
 Planteamiento: Escribe una función que tome un array de números y los ordene de manera ascendente según la cantidad de dígitos que tienen.
 
@@ -229,7 +244,7 @@ console.log(sortNumbers([10, 7, 345, 23, 12, 4567]));
 
 
 /*
-
+15)
 Ordenar palabras alfabéticamente ignorando mayúsculas/minúsculas:
 Planteamiento: Escribe una función que tome un array de palabras y las ordene alfabéticamente sin tener en cuenta las diferencias entre mayúsculas y minúsculas.
 
@@ -245,13 +260,12 @@ const sortWords = words => {
 console.log(sortWords(["apple", "Banana", "Orange", "grape", "Kiwi"]));
 
 /*
-
+16)
 Duplicar los elementos pares y triplicar los impares:
 Planteamiento: Dado un array de números, crea un nuevo array donde los números pares se dupliquen y los números impares se tripliquen.
 
 Entrada: [1, 2, 3, 4, 5]
 Salida: [3, 4, 9, 8, 15]
-
 
 */
 
@@ -259,28 +273,16 @@ const numDupli = numbers => {
     return numbers.map(number => number % 2 === 0 ? number * 2 : number * 3);
 }
 
-
-
 console.log(numDupli([1, 2, 3, 4, 5]));
 
 
-
-    
-
-
-
-
-
-
-
 /*
-
+17)
 Encontrar el promedio de los elementos en un subarray:
 Planteamiento: Dado un array de números y dos índices inicio y fin, encuentra el promedio de los elementos en el subarray que va desde el índice inicio hasta el índice fin (ambos inclusive).
 
 Entrada: Array: [5, 10, 15, 20, 25, 30, 35, 40], Inicio: 2, Fin: 5
 Salida: 22.5 (Promedio de [15, 20, 25, 30])
-
 
 */
 
@@ -292,7 +294,7 @@ const calculateAverage = (numbers, start, end) => {
 console.log(calculateAverage([5, 10, 15, 20, 25, 30, 35, 40], 2, 5));
 
 /*
-
+18
 Encontrar el segundo número más grande:
 Planteamiento: Dado un array de números, encuentra y devuelve el segundo número más grande del array.
 
