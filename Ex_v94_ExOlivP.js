@@ -260,6 +260,7 @@ const sortWords = words => {
 console.log(sortWords(["apple", "Banana", "Orange", "grape", "Kiwi"]));
 
 /*
+
 16)
 Duplicar los elementos pares y triplicar los impares:
 Planteamiento: Dado un array de números, crea un nuevo array donde los números pares se dupliquen y los números impares se tripliquen.
@@ -270,13 +271,15 @@ Salida: [3, 4, 9, 8, 15]
 */
 
 const numDupli = numbers => {
-    return numbers.map(number => number % 2 === 0 ? number * 2 : number * 3);
-}
 
+    return numbers.map(number => number % 2 === 0 ? number * 2 : number * 3);
+
+}
 console.log(numDupli([1, 2, 3, 4, 5]));
 
 
 /*
+
 17)
 Encontrar el promedio de los elementos en un subarray:
 Planteamiento: Dado un array de números y dos índices inicio y fin, encuentra el promedio de los elementos en el subarray que va desde el índice inicio hasta el índice fin (ambos inclusive).
