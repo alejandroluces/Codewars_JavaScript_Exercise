@@ -137,3 +137,173 @@ const findName = (names, min) => {
     return names.find(name => name.length > min);
 }
 console.log(findName(["Alice", "Bob", "Charlie", "Davidd", "Eve"], 6));
+
+
+/*
+
+Encontrar el primer número par mayor que un valor específico:
+Planteamiento: Escribe una función que tome un array de números y un valor mínimo como entrada, y devuelva el primer número par en el array que sea mayor que el valor mínimo.
+
+Entrada: [5, 7, 8, 10, 12, 15], Valor mínimo: 9
+Retorno: 10
+
+
+*/
+
+const findNumber = (numbers, min) => {
+    return numbers.find(number => number > min && number % 2 === 0);
+}
+console.log(findNumber([5, 7, 8, 10, 12, 15], 9));
+
+
+
+/*
+
+Encontrar el índice del primer número divisible por un número dado:
+Planteamiento: Escribe una función que tome un array de números y un número divisor como entrada, y devuelva el índice del primer número en el array que sea divisible por el número divisor.
+
+Entrada: [15, 25, 30, 35, 40], Número divisor: 5
+Retorno: 1
+
+
+*/
+
+const findIndex = (numbers, divisor) => {
+    return numbers.findIndex(number => number % divisor === 0);
+}
+console.log(findIndex([4, 2, 30, 35, 40], 5));
+
+
+/*
+
+Encontrar el índice del primer número impar mayor que un valor específico:
+Planteamiento: Escribe una función que tome un array de números y un valor mínimo como entrada, y devuelva el índice del primer número impar en el array que sea mayor que el valor mínimo.
+
+Entrada: [5, 7, 8, 10, 12, 15], Valor mínimo: 9
+Retorno: 5
+
+
+*/
+
+const findIndexNumber = (numbers, min) => {
+    return numbers.findIndex(number => number > min && number % 2 !== 0);
+}
+console.log(findIndexNumber([5, 7, 8, 10, 12, 15], 9));
+
+
+/*
+
+Ordenar nombres por longitud de manera descendente:
+Planteamiento: Escribe una función que tome un array de nombres y los ordene de manera descendente según su longitud.
+
+Entrada: ["Alice", "Bob", "Charlie", "David", "Eve"]
+Retorno: ["Charlie", "David", "Alice", "Eve", "Bob"]
+
+
+*/
+
+const sortNames = names => {
+    return names.sort((a, b) => b.length - a.length);
+}
+console.log(sortNames(["Alice", "Bob", "Charlie", "David", "Eve"]));
+
+
+
+/*
+
+Ordenar números por cantidad de dígitos de manera ascendente:
+Planteamiento: Escribe una función que tome un array de números y los ordene de manera ascendente según la cantidad de dígitos que tienen.
+
+Entrada: [10, 7, 345, 23, 12, 4567]
+Retorno: [7, 10, 23, 12, 345, 4567]
+
+
+*/
+
+const sortNumbers = numbers => {
+    return numbers.sort((a, b) => a.toString().length - b.toString().length);
+}
+
+console.log(sortNumbers([10, 7, 345, 23, 12, 4567]));
+
+
+
+/*
+
+Ordenar palabras alfabéticamente ignorando mayúsculas/minúsculas:
+Planteamiento: Escribe una función que tome un array de palabras y las ordene alfabéticamente sin tener en cuenta las diferencias entre mayúsculas y minúsculas.
+
+Entrada: ["apple", "banana", "Orange", "grape", "Kiwi"]
+Retorno: ["apple", "banana", "grape", "Kiwi", "Orange"]
+
+
+*/
+
+const sortWords = words => {
+    return words.sort((a, b) => a.localeCompare(b));
+}
+console.log(sortWords(["apple", "Banana", "Orange", "grape", "Kiwi"]));
+
+/*
+
+Duplicar los elementos pares y triplicar los impares:
+Planteamiento: Dado un array de números, crea un nuevo array donde los números pares se dupliquen y los números impares se tripliquen.
+
+Entrada: [1, 2, 3, 4, 5]
+Salida: [3, 4, 9, 8, 15]
+
+
+*/
+
+const numDupli = numbers => {
+    return numbers.map(number => number % 2 === 0 ? number * 2 : number * 3);
+}
+
+
+
+console.log(numDupli([1, 2, 3, 4, 5]));
+
+
+
+    
+
+
+
+
+
+
+
+/*
+
+Encontrar el promedio de los elementos en un subarray:
+Planteamiento: Dado un array de números y dos índices inicio y fin, encuentra el promedio de los elementos en el subarray que va desde el índice inicio hasta el índice fin (ambos inclusive).
+
+Entrada: Array: [5, 10, 15, 20, 25, 30, 35, 40], Inicio: 2, Fin: 5
+Salida: 22.5 (Promedio de [15, 20, 25, 30])
+
+
+*/
+
+const calculateAverage = (numbers, start, end) => {
+    let arrayTwo = numbers.slice(start, end+1 );
+    console.log(arrayTwo);
+    return arrayTwo.reduce((acc, number) => acc + number) / arrayTwo.length;
+}
+console.log(calculateAverage([5, 10, 15, 20, 25, 30, 35, 40], 2, 5));
+
+/*
+
+Encontrar el segundo número más grande:
+Planteamiento: Dado un array de números, encuentra y devuelve el segundo número más grande del array.
+
+Entrada: [7, 12, 9, 2, 15, 3, 10]
+Salida: 12
+
+
+*/
+
+const findSecondLargest = numbers => {
+    return arrayTwo = numbers.sort((a, b) => b - a)[1];
+}
+console.log(findSecondLargest([7, 12, 9, 2, 15, 3, 10]));
+
