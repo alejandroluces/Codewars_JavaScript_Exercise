@@ -19,7 +19,7 @@ const repeatW = (num, palabra1, palabra2) => {
 
 
 
-    console.log(repeatW(5, true, false));
+    console.log(repeatW(5, "rojo", false));
     
 //Otra manera de resolverlo
 
