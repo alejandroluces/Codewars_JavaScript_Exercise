@@ -107,7 +107,8 @@ console.log(filterNumbers([12, 25, 6, 40, 8, 15], 20));
 /*
 7)
 Encontrar el primer múltiplo de un número dado:
-Planteamiento: Escribe una función que tome un array de números y un número objetivo como entrada, y devuelva el primer número en el array que sea un múltiplo del número objetivo.
+Planteamiento: Escribe una función que tome un array de números y un número objetivo como entrada, y devuelva el primer 
+número en el array que sea un múltiplo del número objetivo.
 
 Entrada: [5, 10, 15, 20, 25], Número objetivo: 3
 Retorno: 15
@@ -125,7 +126,8 @@ console.log(findMultiple([5, 10, 15, 20, 25], 3));
 /*
 8)
 Encontrar el primer nombre con más de cierta cantidad de caracteres:
-Planteamiento: Escribe una función que tome un array de nombres y una longitud mínima como entrada, y devuelva el primer nombre en el array que tenga más caracteres que la longitud mínima.
+Planteamiento: Escribe una función que tome un array de nombres y una longitud mínima como entrada, y devuelva el primer 
+nombre en el array que tenga más caracteres que la longitud mínima.
 
 Entrada: ["Alice", "Bob", "Charlie", "David", "Eve"], Longitud mínima: 6
 Retorno: "Charlie"
