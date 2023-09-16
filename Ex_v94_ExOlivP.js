@@ -314,3 +314,37 @@ const findSecondLargest = numbers => {
 }
 console.log(findSecondLargest([7, 12, 9, 2, 15, 3, 10]));
 
+
+
+
+// Planteamiento: Escribe una función que tome como entrada una cadena y determine si contiene al menos una
+//  letra mayúscula y una letra minúscula.
+// // Entrada: Una cadena, por ejemplo: "HolaMundo"
+// // Salida: true si la cadena contiene al menos una letra mayúscula y una letra minúscula, false en caso contrario.
+// const minMay=(str)=>{
+
+//     return str.toLowerCase()!==str || str.toUpperCase()==str
+    
+
+// }
+
+
+const market = {
+    departamento: "frutería",
+    categorias: ["legumbres", "hortalizas", "tubérculos", "frutas"], 
+    inventario: { categoria: {
+                        legumbres: ["lechuga", "repollo", "coliflor", "brocoli"],
+                        hortalizas: ["espinaca", "apio", "zanahoria"], 
+                        tubérculos: ["papa", "yuca", "remolacha"], 
+                        frutas: ["fresa", "mango", "manzana", "pina"]
+    }
+    }
+}
+
+const marketwo = {
+    legumbres: "lenteja", 
+    hortalizas: "brocoli", 
+    tubérculos: "mani", 
+    frutas: "pera",
+    frutosSecos: ["pasas", "nerey", "mani", "nueces"]
+}
